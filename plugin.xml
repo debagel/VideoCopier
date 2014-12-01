@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="de.dbagel.videocopier" version="0.2">
+	
+	<name>VideoCopier</name>
+	<description>Cordova VideoCopier Plugin</description>
+	<license>Apache 2.0</license>
+	<keywords>cordova,video,html5</keywords>
+
+	<asset src="www/videocopier.js" target="js/videocopier.js"/>
+
+	<platform name="android">
+		<!-- Add to res/xml/config.xml -->
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="VideoCopier">
+				<param name="android-package" value="de.dbagel.videocopier.VideoCopier"/>
+			</feature>
+		</config-file>
+		<!-- Move the java into the platform -->
+		<source-file src="src/android/VideoCopier.java" target-dir="src/de/dbagel/videocopier" />
+	</platform>
+	
+</plugin>

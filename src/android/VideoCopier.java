@@ -1,4 +1,5 @@
-package com.phonegap.plugins.video;
+//package com.phonegap.plugins.video;
+package de.dbagel.videocopier;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -14,9 +15,9 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 
-import org.apache.cordova.api.CallbackContext;
-import org.apache.cordova.api.CordovaPlugin;
-import org.apache.cordova.api.PluginResult;
+import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.PluginResult;
 
 public class VideoCopier extends CordovaPlugin {
     private static final String ASSETS = "file:///android_asset/";
